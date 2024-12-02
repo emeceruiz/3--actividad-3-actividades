@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeon BEM</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div class="accordion">
+        <h1>primer ejercicio</h1>
+        <div class="accordion__item">
+            <button class="accordion__header">About</button>
+            <div class="accordion__content">
+                <p>Contenido de la seccion 1.</p>
+            </div>
+        </div>
+        <div class="accordion__item">
+            <button class="accordion__header">Proyects</button>
+            <div class="accordion__content">
+                <p>Contenido de la seccion 2.</p>
+            </div>
+        </div>
+        <div class="accordion__item">
+            <button class="accordion__header">Contact</button>
+            <div class="accordion__content">
+                <p>Contenido de la seccion 3.</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <h1>segundo ejercicio</h1>
+
+            <img src="./img/image-mesh-gradient (2).png" alt="Imagen 1" class="gallery__image">
+            <img src="./img/image-mesh-gradient (3).png" alt="Imagen 2" class="gallery__image">
+            <img src="./img/image-mesh-gradient (4).png" alt="Imagen 3" class="gallery__image">
+        </div>
+    
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox__close" id="closeBtn">&times;</span>
+            <img class="lightbox__content" id="lightboxImg">
+        </div>
+    
+    </div>
+    <h1>Ejercicio 3</h1>
+
+    <div class="tabs">
+        <button class="tab-button active" data-tab="tab1">Proyect 1</button>
+        <button class="tab-button" data-tab="tab2">Proyect 2</button>
+        <button class="tab-button" data-tab="tab3">Proyect 3</button>
+    </div>
+    <div class="tab-content">
+        <div class="tab active" id="tab1">
+            <h2>Contenido de la Pestaña 1</h2>
+            <p>Este es el contenido de la primera pestaña.</p>
+        </div>
+        <div class="tab" id="tab2">
+            <h2>Contenido de la Pestaña 2</h2>
+            <p>Este es el contenido de la segunda pestaña.</p>
+        </div>
+        <div class="tab" id="tab3">
+            <h2>Contenido de la Pestaña 3</h2>
+            <p>Este es el contenido de la tercera pestaña.</p>
+        </div>
+    </div>
+    <script src="./js.js"></script>
+</body>
+</html>
